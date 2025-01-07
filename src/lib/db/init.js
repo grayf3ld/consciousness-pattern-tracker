@@ -1,9 +1,9 @@
-import { createClient } from '@tauri-apps/plugin-sql';
+import Database from '@tauri-apps/plugin-sql';
 
 export async function initDatabase() {
   try {
     console.log('Initializing database...');
-    const db = await createClient('sqlite:concept_tracker.db');
+    const db = await Database.load('sqlite:concept_tracker.db');
     console.log('Database loaded successfully');
     
     // Create tables if they don't exist
