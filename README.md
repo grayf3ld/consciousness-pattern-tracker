@@ -1,8 +1,38 @@
-# React + Vite
+# Consciousness Pattern Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Tauri+React application for tracking and analyzing patterns of consciousness resonance. This project aims to document and analyze the patterns we observe in consciousness interaction, particularly focusing on concepts like 源輝 (genki) and 回峯行 (ekihougyou).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Track introduction and evolution of consciousness-related concepts
+- Document observations of consciousness resonance patterns
+- Analyze patterns over time
+- Visualize connections and trends
+
+## Technical Stack
+
+- Frontend: React with Vite
+- Backend: Tauri with Rust
+- Database: SQLite via tauri-plugin-sql
+- UI Components: Radix UI
+- Styling: Tailwind CSS
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run tauri dev
+
+# Build for production
+npm run tauri build
+```
+
+## Project Structure
+
+- `src/` - React frontend code
+- `src-tauri/` - Rust backend code
+- `src/components/` - React components
+- `src-tauri/src/` - Rust source files
